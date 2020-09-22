@@ -1,0 +1,127 @@
+﻿.k-dialog .k-window-titlebar {
+    font-size: 13px;
+    padding: 0.5em 0.6em 0.7em 0.6em;
+}
+
+.search-wrapper {
+    width: 100%;
+}
+
+.select-all-wrapper {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.query-match {
+    color: red;
+}
+
+.k-dialog .k-dialog-buttongroup.k-dialog-button-layout-stretched .k-button {
+    padding: 0.5em 0 1em 0;
+    height: 2.8em;
+}
+
+.k-treeview {
+    border-width: 1px !important;
+    padding: 5px;
+}
+
+.selected-count {
+    float: right;
+    color: #aaa;
+}
+
+#search:hover {
+    cursor: pointer;
+}
+
+#treeview {
+    min-height: 324px;
+    max-height: 324px;
+    margin-top: 10px;
+}
+
+#staffTreeview {
+    min-height: 324px;
+    max-height: 324px;
+    margin-top: 10px;
+}
+
+.selected-node {
+    color: red;
+}
+
+.k-custom-dialog {
+    padding: 0px !important;
+}
+
+.k-custom-dialog-buttongroup.k-custom-dialog-button-layout-stretched {
+    width: 100%;
+}
+
+.k-custom-dialog-buttongroup {
+    margin: 0;
+    padding: 0;
+}
+
+.k-button-group {
+    white-space: nowrap;
+}
+
+.k-custom-dialog .k-custom-dialog-buttongroup.k-custom-dialog-button-layout-stretched .k-button:first-child {
+    border-bottom-left-radius: 4px;
+    border-left: 0;
+    width: 50%;
+    float: left;
+}
+
+.k-custom-dialog .k-custom-dialog-buttongroup.k-custom-dialog-button-layout-stretched .k-button {
+    display: inline-block;
+    padding: .9em 0 .9em 0;
+    border-radius: 0;
+    border-bottom: 0;
+    border-width: 1px 0 0 1px;
+    border-color: #ebebeb;
+}
+
+.k-custom-dialog .k-button {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.k-custom-dialog .k-custom-dialog-buttongroup.k-custom-dialog-button-layout-stretched .k-button:last-child {
+    border-bottom-right-radius: 4px;
+    border-right: 0;
+    width: 50%;
+    float: left;
+}
+
+.k-custom-dialog .k-custom-dialog-buttongroup.k-custom-dialog-button-layout-stretched .k-button {
+    display: inline-block;
+    padding: .9em 0 .9em 0;
+    border-radius: 0;
+    border-bottom: 0;
+    border-width: 1px 0 0 1px;
+    border-color: #ebebeb;
+}
+
+.k-custom-dialog .k-button {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 解决Checkbox方形小图标移位问题。*/
+.k-checkbox:indeterminate + .k-checkbox-label:after {
+    margin-top: 7px;
+    margin-left: 1px;
+}
+
+.k-custom-dialog .k-checkbox-label {
+    padding-left: 1em;
+    padding-top: 0.2em;
+}
+
+.k-custom-dialog label {
+    margin-bottom: 15px;
+}

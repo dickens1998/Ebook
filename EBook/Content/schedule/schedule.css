@@ -1,0 +1,101 @@
+﻿.cancelledParent {
+    height: 0px !important;
+    width: 0px !important;
+    display: none;
+}
+
+/*.k-scheduler {
+            margin-top: 30px;
+        }*/
+
+label {
+    font-weight: 500;
+}
+
+/*.k-scheduler-monthview .k-scheduler-table td {
+            height: 185px !important;
+        }*/
+
+.k-scheduler-monthview .k-scheduler-table .k-today {
+    background-color: #FBFFBF;
+}
+
+.k-scheduler-mark {
+    display: none;
+}
+
+.k-scheduler-agenda-mark {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.k-edit-form-container .k-button {
+    margin: 0.1em;
+}
+
+.k-combobox {
+    float: right;
+}
+
+.right {
+    float: right;
+}
+
+.k-scheduler div[role=gridcell] {
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.k-scheduler td[role=gridcell] {
+    cursor: pointer;
+}
+
+.invalid-slot {
+    background: red !important;
+    cursor: no-drop;
+}
+
+span.catName {
+    font-size: 12px !important;
+    vertical-align: text-bottom;
+    line-height: 15px !important;
+    margin-right: 12px !important;
+    color: #666 !important;
+}
+
+.catR {
+    width: 0;
+    border-width: 1px !important;
+    border-style: solid !important;
+    height: 14px;
+    margin-right: 3px !important;
+    padding: 4px 12px 3px 1px !important;
+    vertical-align: text-bottom;
+}
+
+.detailTable {
+    width: 90%;
+    margin: 15px auto 10px auto;
+}
+
+    .detailTable tr {
+        height: 50px;
+    }
+
+.detail-title {
+    width: 30%;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    color: #00435e;
+    padding-bottom: 10px;
+}
+
+.detail-content {
+    width: 70%;
+    padding-bottom: 10px;
+}
+
+.location {
+}

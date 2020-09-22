@@ -1,0 +1,172 @@
+@charset "utf-8";
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#hrcbox, #hrcboxOverlay, #hrcboxWrapper{position:absolute; top:0; left:0; z-index:999; overflow:hidden;}
+#hrcboxOverlay{position:fixed; width:100%; height:100%;}
+#hrcboxMiddleLeft, #hrcboxBottomLeft{clear:left;}
+#hrcboxContent{position:relative;  z-index:9999; }
+#hrcboxLoadedContent{overflow:auto; }
+#hrcboxLoadingGraphic { background: url(../image/hrc-loading.gif) no-repeat center center; }
+#hrcboxTitle{margin:0;}
+#hrcboxLoadingOverlay, #hrcboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#hrcboxPrevious, #hrcboxNext, #hrcboxClose, #hrcboxSlideshow{cursor:pointer;}
+.hrcboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+.hrcboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #hrcboxContent, #hrcboxLoadedContent{box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#hrcboxOverlay{background:url(../image/overlay.png); opacity:0.4;filter:Alpha(opacity=40); }
+#colorbox{width: 260px; } 
+    #hrcboxContent{background:#fff; overflow:hidden;  border: 5px solid #CCC; line-height: 24px;  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+        .hrcboxIframe{background:#fff;}
+        #hrcboxError{padding:50px; border:1px solid #ccc;}
+        #hrcboxLoadedContent{margin-top:35px; background:#fff;}
+        #hrcboxTitle{background:#f0f0f0; border-bottom:1px solid #dcdcdc; position:absolute; line-height:35px; top:0;  left:0; text-align:left; text-indent:1em; width:100%; color:#000; font-size:14px; font-family:"微软雅黑"; font-weight:bold;}
+        #hrcboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #hrcboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #hrcboxPrevious{position:absolute; bottom:0; left:0; background:url(../image/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #hrcboxPrevious:hover{background-position:-75px -25px;}
+        #hrcboxNext{position:absolute; bottom:0; left:27px; background:url(../image/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #hrcboxNext:hover{background-position:-50px -25px;} 
+        #hrcboxClose{position:absolute; top:5px; right:5px; background:url(../image/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #hrcboxClose:hover{background-position:-25px -25px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.hrcboxIE #hrcboxTopLeft,
+.hrcboxIE #hrcboxTopCenter,
+.hrcboxIE #hrcboxTopRight,
+.hrcboxIE #hrcboxBottomLeft,
+.hrcboxIE #hrcboxBottomCenter,
+.hrcboxIE #hrcboxBottomRight,
+.hrcboxIE #hrcboxMiddleLeft,
+.hrcboxIE #hrcboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+
+
+
+/*guide tips*/
+.hrc-guideStep {display:none; padding:20px; position:absolute; z-index:1;}
+    .hrc-guideStep .nextStep {  }
+.hrc-guideStepPage {  width:100px; height:100px; background:#fff;}
+
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#popbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:999; overflow:hidden;}
+#cboxWrapper #cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxWrapper #cboxMiddleLeft, #cboxWrapper #cboxBottomLeft{clear:left;}
+#cboxWrapper #cboxContent{position:relative;  z-index:9999; }
+#cboxWrapper #cboxLoadedContent{overflow:auto; }
+#cboxWrapper #cboxLoadingGraphic { background: url(../image/hrc-loading.gif) no-repeat center center; }
+#cboxWrapper #cboxTitle{margin:0;}
+#cboxWrapper #cboxLoadingOverlay, #cboxWrapper #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxWrapper #cboxPrevious, #cboxWrapper #cboxNext, #cboxWrapper #cboxClose, #cboxWrapper #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxWrapper #cboxContent, #cboxWrapper #cboxLoadedContent{box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxWrapper #cboxOverlay{background:url(../image/overlay.png); opacity:0.4;filter:Alpha(opacity=40); }
+#colorbox{width: 260px; } 
+    #cboxWrapper #cboxContent{overflow:hidden; margin-top:0px;}
+        .cboxIframe{background:#fff;}
+        #cboxWrapper #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxWrapper #cboxLoadedContent{background:#fff;}
+        #cboxWrapper #cboxTitle{background:#f0f0f0; border-bottom:1px solid #dcdcdc; position:absolute; line-height:35px; top:0;  left:0; text-align:left; text-indent:1em; width:100%; color:#000; font-size:14px; font-family:"微软雅黑"; font-weight:bold;}
+        #cboxWrapper #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxWrapper #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxWrapper #cboxPrevious{position:absolute; bottom:0; left:0; background:url(../image/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxWrapper #cboxPrevious:hover{background-position:-75px -25px;}
+        #cboxWrapper #cboxNext{position:absolute; bottom:0; left:27px; background:url(../image/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxWrapper #cboxNext:hover{background-position:-50px -25px;} 
+        #cboxWrapper #cboxClose{position:absolute; top:0; right:0; background:url(../image/controls.png) no-repeat -25px 0; width:0; height:0; text-indent:-9999px;}
+        #cboxWrapper #cboxClose:hover{background-position:-25px -25px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxWrapper #cboxTopLeft,
+.cboxIE #cboxWrapper #cboxTopCenter,
+.cboxIE #cboxWrapper #cboxTopRight,
+.cboxIE #cboxWrapper #cboxBottomLeft,
+.cboxIE #cboxWrapper #cboxBottomCenter,
+.cboxIE #cboxWrapper #cboxBottomRight,
+.cboxIE #cboxWrapper #cboxMiddleLeft,
+.cboxIE #cboxWrapper #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#popbox2, #cbox2Overlay, #cbox2Wrapper{position:absolute; top:0; left:0; z-index:999; overflow:hidden;}
+#cbox2Overlay{position:fixed; width:100%; height:100%;}
+#cbox2MiddleLeft, #cbox2BottomLeft{clear:left;}
+#cbox2Content{position:relative;  z-index:9999; }
+#cbox2LoadedContent{overflow:auto; }
+#cbox2LoadingGraphic { background: url(../image/hrc-loading.gif) no-repeat center center; }
+#cbox2Title{margin:0;}
+#cbox2LoadingOverlay, #cbox2LoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cbox2Previous, #cbox2Next, #cbox2Close, #cbox2Slideshow{cursor:pointer;}
+.cbox2Photo{float:left; margin:auto; border:0; display:block; max-width:none;}
+.cbox2Iframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cbox2Content, #cbox2LoadedContent{box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cbox2Overlay{background:url(../image/overlay.png); opacity:0.4;filter:Alpha(opacity=40); }
+#colorbox{width: 260px; } 
+    #cbox2Content{background:#fff; overflow:hidden;  border: 5px solid #CCC; line-height: 24px;  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+        .cbox2Iframe{background:#fff;}
+        #cbox2Error{padding:50px; border:1px solid #ccc;}
+        #cbox2LoadedContent{margin-top:35px; background:#fff;}
+        #cbox2Title{background:#f0f0f0; border-bottom:1px solid #dcdcdc; position:absolute; line-height:35px; top:0;  left:0; text-align:left; text-indent:1em; width:100%; color:#000; font-size:14px; font-family:"微软雅黑"; font-weight:bold;}
+        #cbox2Current{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cbox2Slideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cbox2Previous{position:absolute; bottom:0; left:0; background:url(../image/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cbox2Previous:hover{background-position:-75px -25px;}
+        #cbox2Next{position:absolute; bottom:0; left:27px; background:url(../image/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cbox2Next:hover{background-position:-50px -25px;} 
+        #cbox2Close{position:absolute; top:5px; right:5px; background:url(../image/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cbox2Close:hover{background-position:-25px -25px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cbox2IE #cbox2TopLeft,
+.cbox2IE #cbox2TopCenter,
+.cbox2IE #cbox2TopRight,
+.cbox2IE #cbox2BottomLeft,
+.cbox2IE #cbox2BottomCenter,
+.cbox2IE #cbox2BottomRight,
+.cbox2IE #cbox2MiddleLeft,
+.cbox2IE #cbox2MiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+

@@ -1,0 +1,79 @@
+body { font-size: 12px; }
+
+.chooser_panel th, .chooser_panel td { padding: 0; margin:0; }
+.simpleTree { margin: 0; padding: 0; font: normal 12px arial, tahoma, helvetica, sans-serif; }
+    .yui3-cssbase .simpleTree li { list-style: none; margin: 0; padding: 0 0 0 34px; }
+    .simpleTree ul { margin: 0; padding: 0; }
+    .simpleTree .line, .simpleTree .line-last { list-style: none; display: none; }
+    .simpleTree .folder-close, .simpleTree .folder-close-last, .simpleTree .folder-open, .simpleTree .folder-open-last { margin-left: -16px; line-height: 30px; cursor: pointer; list-style: none; }
+    .simpleTree .folder-close, .simpleTree .folder-close-last { background: url(../image/toggle-expand.png) 0 -2px no-repeat #fff; }
+    .simpleTree .folder-open, .simpleTree .folder-open-last { background: url(../image/toggle-collapse.png) 0 -2px no-repeat #fff; }
+.root { list-style: none; }
+
+.doc, .doc-last { background: url(../image/toggle-collapse.png) 0 -2px no-repeat #fff;   margin-left: -16px; line-height: 30px;  cursor: pointer;}
+
+.simpleTree .trigger { height: 30px; width: 30px; border: none; padding: 0; margin: 0; margin-left: -32px; }
+.simpleTree .root { list-style: none; vertical-align: top; }
+.simpleTree .ajax li { display: none; margin: 0; padding: 0; }
+.sliderTitle { background: url(../image/right-arrow.png) right top no-repeat #fafafa; height: 34px; line-height: 34px; text-indent: 2em; }
+
+.choosercontainer .chooserBox { width: 250px;}
+.choosercontainer .chooserItem { height: 30px; line-height: 30px; cursor: pointer; list-style: none; font-size: 12px; }
+    .choosercontainer .chooserItem:hover { background-color: #fafafa; }
+.choosercontainer .selected { background-image: url(../image/selected.png); }
+.choosercontainer .deleted { background-color:#fff; }
+.deleted:hover { background-image: url(../image/delete.png); }
+
+.deptcontainer { width: 300px; overflow: auto; height: 400px; background-color: #fff; border-right: 1px solid #f0f0f0;  }
+.choosercontainer { width: 280px; overflow: auto; height: 400px; background-color: #fff; float: left; border-right: 1px solid #f0f0f0; }
+    .deptcontainer ul, .choosercontainer ul { padding: 0; margin: 0; }
+    .choosercontainer li { text-indent: 2em; padding: 0; margin: 0; }
+    .choosercontainer span { padding: 0; margin: 0; }
+
+#divloadingcontainer { position: absolute; left: 400px; top: 150px; background-image: url(../image/spinner.gif); width: 16px; height: 16px; display:none; }
+
+/*simpleTree Class*/
+
+.simpleTree .active { cursor: default; padding: 0px 2px; color: orange; }
+.contextMenu { display: none; }
+
+.chooser_panel { position: absolute; margin-top: 0px; width: 860px; height:500px; }
+
+
+
+#aShowAll { font: normal 12px arial, tahoma, helvetica, sans-serif; }
+
+.chooserBottom { width: 100%; height: 60px; background-color: #fafafa; border-top: 1px solid #e6e6e6; text-align: right; }
+     
+.hrc-chooserHeader { width: 100%;
+height: 34px;   
+line-height: 34px;
+background-color: #fafafa;
+background-image: url(../image/right-arrow.png); 
+background-repeat: no-repeat; 
+text-indent:2em;
+border-top: 1px solid #dcdcdc;
+border-bottom: 1px solid #dcdcdc;
+}
+body, html { scrollbar-arrow-color: #FFFFFF; scrollbar-face-color: #e6e6e6; scrollbar-darkshadow-color: #FFFFFF; scrollbar-highlight-color: #FFFFFF; scrollbar-3dlight-color: #FFFFFF; scrollbar-shadow-color: #FFFFFF; scrollbar-track-color: #FFFFFF; }
+        ::-webkit-scrollbar-track-piece { background-color: #fff; -webkit-border-radius: 0; }
+        ::-webkit-scrollbar { width: 15px; height: 8px; }
+        ::-webkit-scrollbar-thumb { height: 20px; background-color: #e6e6e6; -webkit-border-radius: 4px; outline: 2px solid #fff; outline-offset: -2px; border: 2px solid #fff; }
+            ::-webkit-scrollbar-thumb:hover { height: 20px; background-color: #d8d8d8; -webkit-border-radius: 4px; }
+        ::-webkit-scrollbar-button { height: 8px; background-color: #e6e6e6; }
+
+
+.cboxIframe { width: 100%; height: 100%; display: block; border: 0; }
+.ac_results { padding: 0px; border: 1px solid #d7e9d2; background-color: white; overflow: hidden; z-index: 100000; color: #666; }
+.ac_results ul { width: auto; list-style: none; padding: 0; margin: 0; border: none; }
+.ac_results li { margin: 0px; padding: 2px 5px; cursor: default; display: block; text-align: left; /* if width will be 100% horizontal scrollbar will apear  	 when scroll mode will be used 	*/ /*width: 100%;*/ font-family: Tahoma; font-size: 12px; /* it is very important, if line-height not setted or setted  	 in relative units scroll will be broken in firefox 	*/ line-height: 16px; overflow: hidden; }
+.ac_results li strong { color: #f60; }
+.ac_results li i { font-size: 6pt; font-style: normal; color: #ccc; }
+
+.ac_odd {
+background-color: #fff;
+}
+.ac_over {
+background-color: #e8f8ed;
+color: #000;
+}

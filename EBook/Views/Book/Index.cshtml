@@ -1,0 +1,192 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/kendo/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/Content/kendo/kendo.default.mobile.min.css" />
+    <link href="~/Content/kendo/kendo.default.min.css" rel="stylesheet" />
+
+
+
+    <script src="~/Scripts/kendo/jquery.min.js"></script>
+    <script src="~/Scripts/kendo/kendo.all.min.js"></script>
+
+    <script src="~/Scripts/kendo/kendo.timezones.min.js"></script>
+    <script src="~/Scripts/kendo/messages/kendo.messages.zh-CN.min.js"></script>
+    <script src="~/Scripts/kendo/cultures/kendo.culture.zh-CN.min.js"></script>
+
+    <script src="~/Scripts/hrc/hrcsite.js"></script>
+    <script src="~/Scripts/hrc/appraisal.js"></script>
+    <script src="~/Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="~/Scripts/myoa.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <style type="text/css">
+        .customer-photo {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-size: 32px 35px;
+            background-position: center center;
+            vertical-align: middle;
+            line-height: 32px;
+            box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+            margin-left: 5px;
+        }
+
+        .customer-name {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 32px;
+            padding-left: 3px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="example">
+        <div id="grid"></div>
+        <script>
+            $(document).ready(function () {
+                var crudServiceBaseUrl = "/Book",
+
+                    dataSource = new kendo.data.DataSource({
+                        transport: {
+                            read: function (e) {
+                                $.ajax({
+                                    type: "Get",
+                                    url: crudServiceBaseUrl + "/GetAll",
+                                    contentType: "application/json",
+                                    success: function (result) {
+                                        e.success(result);
+                                    }
+                                });
+                            },
+                            update: function (e) {
+                                $.ajax({
+                                    type: "Post",
+                                    url: crudServiceBaseUrl + "/Update",
+                                    contentType: "application/json",
+                                    data: kendo.stringify({
+                                        model: {
+                                            ID: e.data.ID,
+                                            Name: e.data.Name,
+                                            price: e.data.Price,
+                                            Author: e.data.Author
+                                        }
+                                    }),
+                                    success: function (result) {
+                                        if (result.Item1) {
+                                            e.success(result.data);
+                                            read;
+                                        } else {
+                                            alert(result.Item2);
+                                        }
+                                    },
+                                    error: function (error) {
+                                        alert(error.responseText);
+                                    }
+                                });
+                            },
+                            create: function (e) {
+                                $.ajax({
+                                    type: "Post",
+                                    url: crudServiceBaseUrl + "/Add",
+                                    contentType: "application/json",
+                                    data: kendo.stringify({
+                                        model: {
+                                            Name: e.data.Name,
+                                            price: e.data.Price,
+                                            Author: e.data.Author
+                                        }
+                                    }),
+                                    success: function (result) {
+                                        if (result.Item1) {
+                                            e.success(result.data);
+
+                                        } else {
+                                            alert(result.Item2);
+                                        }
+                                    },
+                                    error: function (error) {
+                                        alert(error.responseText);
+                                    }
+                                })
+                            },
+                            destroy: function (e) {
+                                debugger;
+                                $.ajax({
+                                    type: "Post",
+                                    url: crudServiceBaseUrl + "/Delete",
+                                    contentType: "application/json",
+                                    data: kendo.stringify({
+                                        model: {
+                                            ID: e.data.ID
+                                        }
+                                    }),
+                                    success: function (result) {
+                                        if (result.Item1) {
+                                            e.success(result.data);
+                                        } else {
+                                            alert(result.Item2);
+                                        }
+                                    },
+                                    error: function (error) {
+                                        alert(error.responseText);
+                                    }
+                                })
+                            },
+                     
+
+                        },
+                        pageSize: 40,
+                        schema: {
+                            model: {
+                                id: "ID",
+                                fields: {
+                                    ID: { editable: false, nullable: true },
+                                    Name: { validation: { required: true } },
+                                    Author: { validation: { required: true } },
+                                    Price: { type: "number", validation: { required: true, min: 1 } },
+
+                                }
+                            }
+                        }
+                    });
+
+                $("#grid").kendoGrid({
+                    dataSource: dataSource,//数据源加载
+                    pageable: true,//  分页信息选项设置
+                    height: 550,
+                    toolbar: ["create"], //工具条,可以使用模板自定义
+                    columns: [
+                        //{ field: "ID", title: "编号" },
+                        { field: "Author", title: "作者" },
+                        { field: "Name", title: "书名" },
+                        { field: "Price", title: "单价", format: "{0:c}", width: "120px" },
+                        { command: ["edit", "destroy"], title: "&nbsp;", width: "250px" }],
+                    editable: "popup"
+                });
+            });
+
+            function customBoolEditor(container, options) {
+                var guid = kendo.guid();
+                $('<input class="k-checkbox" id="' + guid + '" type="checkbox" name="Discontinued" data-type="boolean" data-bind="checked:Discontinued">').appendTo(container);
+                $('<label class="k-checkbox-label" for="' + guid + '">​</label>').appendTo(container);
+            }
+        </script>
+    </div>
+
+
+
+</body>
+</html>
+

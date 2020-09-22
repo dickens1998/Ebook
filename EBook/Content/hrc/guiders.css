@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* tips style */
+
+#guider_overlay { background: url(../image/overlay2.png); position: absolute; _position:absolute;  top:0; left: 0px; z-index: 999; }
+.guider { position: relative; z-index: 99 !important; width: 1000px; height:100%; margin: 0 auto;}
+.guider_content { position: relative; width: 450px; height: 300px; }
+    .guider_content a { cursor: pointer; color: #f60; display: block; }
+
+
+a.guider_button_next { display: block; width: 100px; height: 56px; position: absolute; bottom: 0px; right: 50px; background-image: url(../image/hrc-guider.png); background-position: 0px 0px; background-repeat: no-repeat; }
+a.guider_button_close { display: block; width: 75px; height: 60px; position: absolute; bottom: -10px; left: 100px; background-image: url(../image/hrc-guider.png); background-position: 0px -56px; background-repeat: no-repeat; }
+
+
+
+
+/**Demo**/
+.step1guidBackground { background: url(../image/yuangongpinggu.png); }
+.step2guidBackground { background: url(../image/biaoge.png); }
+.step3guidBackground { background: url(../image/fb.png); }
+.step1Background { background: url(../image/step1Tips.png); }
+.step2Background { background: url(../image/step2Tips.png); }
+.step3Background { background: url(../image/step3Tips.png); }

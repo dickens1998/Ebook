@@ -1,0 +1,54 @@
+﻿.scheduler-attachment .file:hover {
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+    .scheduler-attachment .file:hover > .file-close {
+        display: block;
+        cursor: pointer;
+    }
+
+.scheduler-attachment .file {
+    width: 80px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+    .scheduler-attachment .file .file-close {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: url(../../Content/images/icon_close.png) center top no-repeat;
+        background-size: 20px 20px;
+        right: -5px;
+        top: -5px;
+        display: none;
+    }
+
+    .scheduler-attachment .file img {
+        margin: 10px auto 8px auto;
+        display: block;
+    }
+
+    .scheduler-attachment .file a {
+        width: 100%;
+        cursor: pointer;
+        white-space: nowrap;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+.scheduler-attachment .file-more {
+    width: 80px;
+    height: 100%;
+    float: left;
+}
+
+    .scheduler-attachment .file-more img {
+        margin: 10px auto 8px auto;
+        display: block;
+        cursor: pointer;
+    }

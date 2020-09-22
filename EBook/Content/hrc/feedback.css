@@ -1,0 +1,20 @@
+@charset "utf-8";
+/*CSS feed back*/
+.hrc-top-feedback { display:inline-block; float:right; }
+.hrc-top-feedback .hrc_feedbacktext { background-image: url(../image/hrc-component.png); background-position: -25px -64px; color: #666; display: inline-block;  height: 25px; line-height: 26px; margin-top: 50px; text-indent: 3em; width: 105px; }
+
+.hrc-float-feedback { background-color: #fcfcfc; border: 1px solid #e2e2e2; border-radius: 6px;  -webkit-border-radius: 6px; -moz-border-radius: 6px; box-shadow: 1px 1px 3px #ececec, -1px -1px 3px #ececec; left: 50%;   margin-left: 565px; position: fixed;  width: 60px; z-index:1;}
+.hrc-toTop {display: block; border-bottom: 1px solid #e2e2e2; height: 50px; }
+.hrc-toTop:hover { background-color:#e2e2e2; }
+.hrc-toTop i { margin: 5px 9px 5px 14px; background-image: url(../image/hrc-feedback.png); background-position: -25px -20px; width: 35px; height: 35px; display: inline-block; vertical-align: middle; background-repeat: no-repeat; cursor: pointer; }
+.hrc-feedback-follow {  cursor:pointer; height: 60px; border-bottom: 1px solid #e2e2e2; display: block; text-decoration: none;}
+.hrc-videohelp span, .hrc-feedback-follow span { color: #666; display: block; text-align:center; width: 60px; font-size: 12px;}
+
+.hrc-ask {  margin: 10px 10px 0 17px; background-image: url(../image/hrc-feedback.png); background-position: 0px -38px; width: 25px; height: 25px; display: inline-block; vertical-align: middle; background-repeat: no-repeat; cursor: pointer; }
+
+.hrc-videohelp {  border-top: 1px solid #e2e2e2; position: relative; margin:0 0 5px 0px; }
+
+.hrc-float-feedback img { margin:0px; padding:0px; }
+
+.hrc-8008 { background-image: url(../image/hrc-feedback.png); width: 60px; height: 20px; display: inline-block; vertical-align: middle; background-repeat: no-repeat; cursor: pointer;  }
+

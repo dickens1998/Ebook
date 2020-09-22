@@ -1,0 +1,2119 @@
+﻿@charset "utf-8";
+
+/*CSS a style*/
+a {
+    color: #08c;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #058;
+    }
+
+    /*CSS submit button*/
+    a.hrc-btn-submit, a.hrc-btn-submit:visited, a.hrc-btn-submit:link, .hrc-btn-submit {
+        background-image: url(../image/hrc-button.png);
+        background-position: left -128px;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        margin: 10px 10px 0 0px;
+        line-height: 32px;
+        font-weight: bold;
+        font-family: 宋体;
+    }
+
+        .hrc-btn-submit:hover {
+            cursor: pointer;
+        }
+
+        a.hrc-btn-submit span, .hrc-btn-submit span {
+            background-image: url(../image/hrc-button.png);
+            background-position: right -128px;
+            background-repeat: no-repeat;
+            padding-right: 16px;
+            margin: 0 0 0 16px;
+            display: inline-block;
+        }
+
+        a.hrc-btn-submit:hover {
+            background-position: left -160px;
+            outline: none;
+            text-decoration: none;
+        }
+
+            a.hrc-btn-submit:hover span {
+                background-position: right -160px;
+                text-decoration: none;
+            }
+
+        a.hrc-btn-submit:active {
+            background-position: left -192px;
+            outline: none;
+        }
+
+            a.hrc-btn-submit:active span {
+                background-position: right -192px;
+            }
+
+    a.hrc-submit-disabled, a.hrc-submit-disabled:link, a.hrc-submit-disabled:hover, a.hrc-submit-disabled:visited {
+        background-position: left -224px;
+        outline: none;
+        pointer-events: none;
+        cursor: default;
+    }
+
+        a.hrc-submit-disabled span, a.hrc-submit-disabled:hover span, a.hrc-submit-disabled:visited span {
+            background-position: right -224px;
+            color: #87c679;
+        }
+
+    /*CSS delete button*/
+    a.hrc-btn-delete, a.hrc-btn-delete:visited, a.hrc-btn-delete:link, .hrc-btn-delete {
+        background-image: url(../image/hrc-button.png);
+        background-position: left -568px;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        margin: 10px 10px 0 0px;
+        line-height: 32px;
+        font-weight: bold;
+        font-family: 宋体;
+    }
+
+        .hrc-btn-delete:hover {
+            cursor: pointer;
+        }
+
+        a.hrc-btn-delete span, .hrc-btn-delete span {
+            background-image: url(../image/hrc-button.png);
+            background-position: right -568px;
+            background-repeat: no-repeat;
+            padding-right: 16px;
+            margin: 0 0 0 16px;
+            display: inline-block;
+        }
+
+        a.hrc-btn-delete:hover {
+            background-position: left -600px;
+            outline: none;
+            text-decoration: none;
+        }
+
+            a.hrc-btn-delete:hover span {
+                background-position: right -600px;
+                text-decoration: none;
+            }
+
+        a.hrc-btn-delete:active {
+            background-position: left -632px;
+            outline: none;
+        }
+
+            a.hrc-btn-delete:active span {
+                background-position: right -632px;
+            }
+
+    a.hrc-delete-disabled, a.hrc-delete-disabled:link, a.hrc-delete-disabled:hover, a.hrc-delete-disabled:visited {
+        background-position: left -664px;
+        outline: none;
+        pointer-events: none;
+        cursor: default;
+    }
+
+        a.hrc-delete-disabled span, a.hrc-delete-disabled:hover span, a.hrc-delete-disabled:visited span {
+            background-position: right -664px;
+            color: #C67979;
+        }
+
+    /*CSS common button */
+    a.hrc-btn-common, a.hrc-btn-common:visited, a.hrc-btn-common:link, .hrc-btn-common {
+        background-image: url(../image/hrc-button.png);
+        background-position: left top;
+        color: #666;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        margin: 10px 10px 0 0px;
+        line-height: 32px;
+        font-weight: bold;
+        font-family: 宋体;
+    }
+
+        .hrc-btn-common:hover {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        a.hrc-btn-common span, .hrc-btn-common span {
+            background-image: url(../image/hrc-button.png);
+            background-position: right top;
+            padding-right: 16px;
+            margin: 0 0 0 16px;
+            display: inline-block;
+        }
+
+        a.hrc-btn-common:hover {
+            background-position: left -32px;
+            color: #000;
+            outline: none;
+            text-decoration: none;
+        }
+
+            a.hrc-btn-common:hover span {
+                background-position: right -32px;
+            }
+
+        a.hrc-btn-common:active {
+            background-position: left -64px;
+            outline: none;
+        }
+
+            a.hrc-btn-common:active span {
+                background-position: right -64px;
+            }
+
+    a.hrc-common-disabled, a.hrc-common-disabled:link, a.hrc-common-disabled:hover, a.hrc-common-disabled:visited {
+        background-position: left -96px;
+        outline: none;
+        pointer-events: none;
+        cursor: default;
+    }
+
+        a.hrc-common-disabled span, a.hrc-common-disabled:hover span, a.hrc-common-disabled:visited span {
+            background-position: right -96px;
+            color: #c5c5c5;
+        }
+
+.hrc-tag-button, .hrc-tag-button-common  {    
+    text-align: center;
+    display: inline-block;
+    cursor: pointer; 
+    padding:8px 14px;
+    font-weight: bold;
+    font-family: 宋体;
+    border-radius:3px; 
+    overflow: visible;
+}
+.hrc-tag-button {
+    color: #fff;
+    background-color:#64BE50;
+    background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#64BE50), to(#5aaa50), color-stop(0.5,#5db150));
+    background-image:-moz-linear-gradient(0% 0% 180deg, #64BE50,#5AAA50, #5db150 50%);    
+    border:1px solid #5AAA3C;
+}
+.hrc-tag-button-common {
+    color: #666;
+    background-color:#fafafa;
+    background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#f5f5f5), to(#fafafa), color-stop(0.5,#f0f0f0));
+    background-image:-moz-linear-gradient(0% 0% 180deg, #f5f5f5,#fafafa, #f0f0f0 50%);    
+    border:1px solid #d2d2d2;
+}
+input.hrc-tag-input-submit, input.hrc-tag-input-button, input.hrc-tag-input-submit-common, input.hrc-tag-input-button-common {    
+    text-align: center;
+    display: inline-block;
+    cursor: pointer; 
+    padding:8px 12px;
+    font-weight: bold;
+    font-family: 宋体;
+    border-radius:3px;    
+    border-radius:0px\9;
+    filter:chroma(color=#000000);
+    overflow: visible;
+}
+input.hrc-tag-input-submit, input.hrc-tag-input-button {
+    color: #fff;
+    border:1px solid #5AAA3C; 
+    background-color:#64BE50;
+    background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#64BE50), to(#5aaa50), color-stop(0.5,#5db150));
+    background-image:-moz-linear-gradient(0% 0% 180deg, #64BE50,#5AAA50, #5db150 50%);
+
+}
+input.hrc-tag-input-submit-common, input.hrc-tag-input-button-common {
+    color: #666;
+    background-color:#fafafa;
+    background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#f5f5f5), to(#fafafa), color-stop(0.5,#f0f0f0));
+    background-image:-moz-linear-gradient(0% 0% 180deg, #f5f5f5,#fafafa, #f0f0f0 50%);
+    border:1px solid #d2d2d2;
+}
+@-moz-document url-prefix()
+{
+    input.hrc-tag-input-submit, input.hrc-tag-input-button, .input.hrc-tag-input-submit, .hrc-tag-input-button-common{
+    padding:7px 12px; }
+
+.hrc-tag-button, .hrc-tag-button-common {    
+    padding:7px 10px;
+}
+          }
+/**CSS button group **/
+.hrc-btn-group {
+    position: relative;
+    display: inline-block;
+}
+
+    .hrc-btn-group .hrc-btn {
+        display: block;
+        border-left: 1px solid #cccccc;
+        border-right: 1px solid #cccccc;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #b3b3b3;
+        position: relative;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        float: left;
+        border-radius: 0;
+        margin: 0 0px 0px -1px;
+        cursor: pointer;
+        font-family: 宋体;
+        display: inline-block;
+        padding: 4px 10px 4px;
+        font-size: 12px;
+        line-height: 28px;
+        color: #333333;
+        text-align: center;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+        vertical-align: middle;
+        background-color: #f5f5f5;
+        background-repeat: repeat-x;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        background-image: linear-gradient(top, #ffffff, #e6e6e6);
+    }
+
+        .hrc-btn-group .hrc-btn:first-child {
+            margin-left: 0;
+            -webkit-border-top-left-radius: 4px;
+            -moz-border-radius-topleft: 4px;
+            border-top-left-radius: 4px;
+            -webkit-border-bottom-left-radius: 4px;
+            -moz-border-radius-bottomleft: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        .hrc-btn-group .hrc-btn:last-child {
+            -webkit-border-top-right-radius: 4px;
+            -moz-border-radius-topright: 4px;
+            border-top-right-radius: 4px;
+            -webkit-border-bottom-right-radius: 4px;
+            -moz-border-radius-bottomright: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+    .hrc-btn-group .selected {
+        background-image: none;
+        -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+        background-color: #d9d9d9;
+        outline: 0;
+    }
+
+.hrc-btn:hover {
+    color: #333333;
+    text-decoration: none;
+    background-color: #e6e6e6;
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -ms-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+}
+/*CSS squickSearch*/
+.hrc-search {
+    border: 1px solid #CCC;
+    width: 275px;
+    float: right;
+    position: relative;
+    background-color: #f9f9f9;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+    .hrc-search input.hrc-searchText {
+        height: 32px;
+        border: none;
+        border-right: 1px solid #CCC;
+        line-height: 30px;
+    }
+
+    .hrc-search input.hrc-quickSearch {
+        background-color: #f6f6f6;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        margin: 0;
+        right: 4px;
+        width: 32px;
+        height: 32px;
+        z-index: 0;
+        background-image: url(../image/hrc-component.png);
+        background-position: -60px -90px;
+    }
+
+/*CSS 过滤查询*/
+a.hrc-btn-filterSearch, a.hrc-btn-filterSearch:visited, a.hrc-btn-filterSearch:link, .hrc-btn-filterSearch {
+    background-image: url(../image/hrc-button.png);
+    background-position: left -256px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 10px 0 0px;
+    line-height: 32px;
+    font-weight: bold;
+    font-family: 宋体;
+}
+
+    .hrc-btn-filterSearch:hover {
+        cursor: pointer;
+    }
+
+    a.hrc-btn-filterSearch span, .hrc-btn-filterSearch span {
+        background-image: url(../image/hrc-button.png);
+        background-position: right -256px;
+        background-repeat: no-repeat;
+        padding-right: 16px;
+        margin: 0 0 0 30px;
+        display: block;
+    }
+
+    a.hrc-btn-filterSearch:hover {
+        background-position: left -288px;
+        outline: none;
+        text-decoration: none;
+    }
+
+        a.hrc-btn-filterSearch:hover span {
+            background-position: right -288px;
+        }
+
+    a.hrc-btn-filterSearch:active {
+        background-position: left -320px;
+        outline: none;
+    }
+
+        a.hrc-btn-filterSearch:active span {
+            background-position: right -320px;
+        }
+
+a.hrc-filterSearch-disabled, a.hrc-filterSearch-disabled:link, a.hrc-filterSearch-disabled:hover, a.hrc-filterSearch-disabled:visited {
+    background-position: left -352px;
+    outline: none;
+    pointer-events: none;
+    cursor: default;
+}
+
+    a.hrc-filterSearch-disabled span, a.hrc-filterSearch-disabled:hover span, a.hrc-filterSearch-disabled:visited span {
+        background-position: right -352px;
+        color: #fda58a;
+    }
+
+/*CSS  查找*/
+a.hrc-btn-search, a.hrc-btn-search:visited, a.hrc-btn-search:link, .hrc-btn-search {
+    background-image: url(../image/hrc-button.png);
+    background-position: left -385px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 10px 0 0px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 宋体;
+}
+
+    .hrc-btn-search:hover {
+        cursor: pointer;
+    }
+
+    a.hrc-btn-search span, .hrc-btn-search span {
+        background-image: url(../image/hrc-button.png);
+        background-position: right -385px;
+        background-repeat: no-repeat;
+        padding-right: 18px;
+        margin: 0 0 0 18px;
+        display: inline-block;
+    }
+
+    a.hrc-btn-search:hover {
+        background-position: left -425px;
+        outline: none;
+        text-decoration: none;
+    }
+
+        a.hrc-btn-search:hover span {
+            background-position: right -425px;
+        }
+
+    a.hrc-btn-search:active {
+        background-position: left -465px;
+        outline: none;
+    }
+
+        a.hrc-btn-search:active span {
+            background-position: right -465px;
+        }
+
+a.hrc-search-disabled, a.hrc-search-disabled:link, a.hrc-search-disabled:hover, a.hrc-search-disabled:visited {
+    background-position: left -505px;
+    outline: none;
+    pointer-events: none;
+    cursor: default;
+}
+
+    a.hrc-search-disabled span, a.hrc-search-disabled:hover span, a.hrc-search-disabled:visited span {
+        background-position: right -505px;
+        color: #fda58a;
+    }
+
+.hrc-link-disabled {
+    color: #666;
+}
+
+    .hrc-link-disabled:hover {
+        color: #666;
+    }
+
+/*CSS alert*/
+.hrc-alert {
+    background-color: #fff;
+    color: #999;
+    padding: 5px 50px 40px 50px;
+    width: 260px;
+    line-height: 34px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.hrc-alertTitle {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hrc-alert td {
+    padding: 0px;
+}
+
+.hrc-successalert {
+    width: 32px;
+    height: 32px;
+    text-align: right;
+    background-image: url(../image/hrc-component.png);
+    background-position: -68px -185px;
+    background-repeat: no-repeat;
+}
+
+.hrc-warnalert {
+    width: 32px;
+    height: 32px;
+    text-align: right;
+    background-image: url(../image/hrc-component.png);
+    background-position: -52px -151px;
+    background-repeat: no-repeat;
+}
+
+.hrc-erroralert {
+    width: 32px;
+    height: 32px;
+    text-align: right;
+    background-image: url(../image/hrc-component.png);
+    background-position: -85px -151px;
+    background-repeat: no-repeat;
+}
+
+.hrc-notialert {
+    width: 32px;
+    height: 32px;
+    text-align: right;
+    background-image: url(../image/hrc-component.png);
+    background-position: -118px -151px;
+    background-repeat: no-repeat;
+}
+
+.hrc-alert i {
+    margin-right: 10px;
+}
+
+.hrc-alertTitle {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+
+.hrc-ok {
+    background-image: url(../image/hrc-component.png);
+    background-position: -68px -185px;
+    width: 32px;
+    height: 34px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+.hrc-alert td {
+    word-break: break-all;
+    line-height: 20px;
+}
+
+.hrc-alert a {
+    float: right;
+}
+
+.hrc-alert-warning a {
+    float: none;
+}
+/*CSS style table-none border list*/
+.hrc-noborderTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .hrc-noborderTable th, .hrc-noborderTable td {
+        border: none;
+    }
+
+    .hrc-noborderTable .hrc-altrow {
+        background-color: #e6eeee;
+    }
+
+    .hrc-noborderTable textArea {
+        height: 70px;
+        width: 660px;
+    }
+
+    .hrc-noborderTable .hrc-datePickerInput {
+        background-image: url(../image/datePicker.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+
+    /*CSS style form button*/
+    .hrc-noborderTable .grayFontColor {
+        color: #999;
+    }
+
+
+
+
+/*CSS list table*/
+/*CSS style table list*/
+.hrc-listTable {
+    border-collapse: collapse;
+    border: 1px #e8e8e8 solid;
+    table-layout: fixed;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+}
+
+    .hrc-listTable th {
+        background: url(../image/hrc-grid-spliter.png) no-repeat left center;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        /*text-indent: 5px;*/
+        display: table-cell;
+        vertical-align: inherit;
+    }
+
+        .hrc-listTable th:first-child {
+            background-image: none;
+        }
+
+        .hrc-listTable th a, .hrc-listTable th span {
+            color: #666;
+        }
+
+    .hrc-listTable th,
+    .hrc-listTable td {
+        border: none;
+        border-bottom: 1px solid #e8e8e8;
+        overflow: hidden;
+        padding-left: 5px;
+        text-overflow: ellipsis;
+        /*white-space: nowrap;*/
+        line-height: 18px;
+    }
+
+    .hrc-listTable th {
+        background-color: #fafafa;
+        text-align: left;
+    }
+
+    .hrc-listTable .hrc-altrow {
+        background-color: #fff;
+    }
+
+    .hrc-listTable .hrc-tableHover {
+        background-color: #f7f7f7;
+    }
+
+
+
+/*CSS submit area*/
+.hrc-submitArea {
+    height: 40px;
+    text-align: right;
+}
+
+/*CSS pagenation*/
+.oagrid_pagenav {
+    background-color: #fff;
+    color: gray;
+    padding: 10px;
+    text-align: right;
+}
+.oagrid_pagenav a {
+    width:28px;
+    background-color: white;
+    border: #ccc 1px solid;
+    padding: 2px 6px;
+    margin: 0px 2px;
+    /*color: #06c;*/
+    color: #50AD22;
+    text-decoration: none;
+}
+
+.oagrid_pagenav a:hover, .pagination a:active {
+    border: #b7d8ee 1px solid;
+    color: #fff;
+    /* background-color: #21aff0;*/
+    font-weight: bold;
+    background-color: #50AD22;
+    text-decoration: none;
+}
+
+
+.oagrid_pagenav_selectedpagenumber {
+    border: #ccc 1px solid;
+    padding: 2px 6px;
+    margin: 0px 3px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #50AD22;;
+}
+
+.oagrid_pagenav span.disabled {
+    display: none;
+}
+
+.oagrid_pagenav input {
+    width: 25px;
+    line-height: 15px;
+    height: 15px;
+    text-align: right;
+}
+
+.oagrid_pagenav strong {
+    color: Black;
+    padding: 0.5em;
+}
+
+/*表格表头排序样式*/
+.hrc-listTable th a, .oagrid_header_sorter_desc a {
+    background-image: url(../image/hrc-icon-controls.png);
+    margin-right: -15px;
+    background-position: right -135px;
+    display: block;
+    background-repeat: no-repeat;
+}
+/*降序*/
+.hrc-listTable .oagrid_header_sorter_asc a {
+    background-image: url(../image/hrc-icon-controls.png);
+    margin-right: -15px;
+    background-position: right -165px;
+    display: block;
+    background-repeat: no-repeat;
+}
+/*升序*/
+
+.FontEnabled {
+    color: silver;
+}
+
+/*CSS advance search*/
+
+.hrc-tableoperation {
+    background: url(../image/advanceLayerBg.png);
+    background-repeat: repeat-x;
+    height: 52px;
+}
+
+.hrc-advanceSearchButton {
+    background: url(../image/advanceBg.png);
+    display: block;
+    float: right;
+    height: 52px;
+    line-height: 52px;
+    width: 90px;
+    text-align: center;
+}
+
+.hrc-tableoperationOpen {
+    height: 56px;
+}
+
+.hrc-filterContent {
+    background-color: #fff;
+    background: url(../image/advanceContentOpenBg.png);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    display: none;
+    padding: 5px;
+}
+
+.hrc-filterResult {
+    background-color: #fefdee;
+    border: 1px solid #fdeac9;
+    display: none;
+    padding: 8px 10px;
+}
+
+.hrc-clearFilter {
+    margin-left: 30px;
+}
+
+.hrc-filterContent input[type="text"], .hrc-filterContent select {
+    width: 145px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.hrc-advanceselect {
+    background: url(../image/advanceOpenBg.png);
+}
+
+.hrc-grid-spliter {
+    background-image: url(../image/hrc-grid-spliter.png);
+    width: 1px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+/*workPlace chooser*/
+.hrc-workPlaceChooser {
+    width: 655px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.hrc-wordPlacePoint {
+    width: 160px;
+    height: 35px;
+}
+
+.hrc-workPlaceChooser table {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .hrc-workPlaceChooser table td {
+        border: solid 1px #f3f3f3;
+        padding: 0;
+        margin: 0;
+    }
+
+.hrc-workPlaceChooser a {
+    color: #333;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    width: 160px;
+}
+
+    .hrc-workPlaceChooser a:hover {
+        background-color: #fafafa;
+        text-decoration: none;
+    }
+
+.hrc-workPlaceArea {
+    width: 490px;
+    float: left;
+    border-bottom: solid 1px #f3f3f3;
+}
+
+.hrc-workPlaceHeader {
+    width: 100%;
+    height: 40px;
+    border: solid 1px #f3f3f3;
+    border-right: none;
+    background-color: #fafafa;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.hrc-workPlaceContent {
+    float: left;
+    width: 100%;
+    height: 145px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.hrc-selectWorkPlaceArea {
+    width: 160px;
+    float: left;
+    border: solid 1px #f3f3f3;
+    border-top: none;
+}
+
+.hrc-selectWorkPlaceHeader {
+    width: 100%;
+    height: 40px;
+    border: solid 1px #f3f3f3;
+    border-left: none;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: white;
+    background-image: url(../image/hrc-component.png);
+    background-position: -100px -110px;
+    background-repeat: no-repeat;
+}
+
+.hrc-selectWorkPlaceContent {
+    float: left;
+    width: 100%;
+    height: 145px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/*datepicker */
+input.hrc-datepicker {
+    background-image: url(../image/hrc-icon-controls.png);
+    background-position: right -4px;
+    background-repeat: no-repeat;
+    width: 100px;
+}
+
+input.hrc-datepickerLong {
+    background-image: url(../image/hrc-icon-controls.png);
+    background-position: right -4px;
+    background-repeat: no-repeat;
+}
+
+input.hrc-architectChooser {
+    background-image: url(../image/hrc-icon-controls.png);
+    background-position: right -36px;
+    background-repeat: no-repeat;
+    padding-right: 25px;
+    width: 205px;
+}
+
+
+/*hrc tips*/
+.hrc-tips {
+    border: 1px solid #dedede;
+    padding: 8px;
+    background: #ffc;
+    color: #000;
+    max-width: 500px;
+    word-break: break-all;
+}
+
+
+/*css icons*/
+.hrc-icon-require {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -26px -18px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-info {
+    background-image: url(../image/hrc-icons.png);
+    background-position: -120px -97px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-setting {
+    background-image: url(../image/hrc-icons.png);
+    background-position: -433px -0px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-edit {
+    background-image: url(../image/hrc-icons.png);
+    background-position: 0px -72px;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-magnifier {
+    background-image: url(../image/hrc-icons.png);
+    background-position: -336px 0px;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-help {
+    background-image: url(../image/hrc-icons.png);
+    background-position: -97px -97px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-fav {
+    background-image: url(../image/hrc-icons.png);
+    background-position: -120px 0px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-mail {
+    background-image: url(../image/hrc-icons.png);
+    background-position: -72px 0px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-refresh {
+    background-image: url(../image/hrc-icons.png);
+    background-position: -240px -24px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-reload {
+    background-image: url(../image/hrc-icons.png);
+    background-position: -216px -24px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-video {
+    background-image: url(../image/hrc-icons.png);
+    background-position: -433px -48px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-lock {
+    background-image: url(../image/hrc-icons.png);
+    background-position: -288px -24px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-export {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -50px -18px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-backup {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -72px -18px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-big-question {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -96px -16px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-task {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -163px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-map {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -253px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-notebook {
+    background-image: url(../image/hrc-symbolize-icons.png);
+    background-position: -6px -8px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-result {
+    background-image: url(../image/hrc-symbolize-icons.png);
+    background-position: -40px -8px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-settings {
+    background-image: url(../image/hrc-symbolize-icons.png);
+    background-position: -76px -8px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-flow {
+    background-image: url(../image/hrc-symbolize-icons.png);
+    background-position: -6px -40px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-process {
+    background-image: url(../image/hrc-symbolize-icons.png);
+    background-position: -40px -40px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-config {
+    background-image: url(../image/hrc-symbolize-icons.png);
+    background-position: -112px -8px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-user {
+    background-image: url(../image/hrc-symbolize-icons.png);
+    background-position: -76px -40px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-briefcase {
+    background-image: url(../image/hrc-symbolize-icons.png);
+    background-position: -112px -40px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-tie {
+    background-image: url(../image/hrc-symbolize-icons.png);
+    background-position: -148px -40px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-loading {
+    background-image: url(../image/hrc-loading.gif);
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-tie2 {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -185px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-plane {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -300px -16px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-money {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -300px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-ok {
+    background-image: url(../image/hrc-icons.png);
+    background-position: -288px 0px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-loading {
+    background: url(../image/hrc-loading.gif);
+    width: 32px;
+    height: 34px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-color-first {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -4px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-color-second {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -4px -16px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-color-third {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -118px -16px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-color-message {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -96px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-color-attention {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -24px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-color-info {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -118px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-color-face {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -72px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-color-magnifier {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -142px -15px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+.hrc-icon-color-question {
+    background-image: url(../image/hrc-colorIcon.png);
+    background-position: -48px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+
+
+.hrc-entrance-q1 {
+    background-image: url(../image/hrc-q1.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q1:hover {
+        background-image: url(../image/hrc-q1Hover.png);
+    }
+
+.hrc-entrance-q2 {
+    background-image: url(../image/hrc-q2.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q2:hover {
+        background-image: url(../image/hrc-q2Hover.png);
+    }
+
+.hrc-entrance-q3 {
+    background-image: url(../image/hrc-q3.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q3:hover {
+        background-image: url(../image/hrc-q3Hover.png);
+    }
+
+.hrc-entrance-q4 {
+    background-image: url(../image/hrc-q4.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q4:hover {
+        background-image: url(../image/hrc-q4Hover.png);
+    }
+
+.hrc-entrance-q5 {
+    background-image: url(../image/hrc-q5.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q5:hover {
+        background-image: url(../image/hrc-q5Hover.png);
+    }
+
+.hrc-entrance-q6 {
+    background-image: url(../image/hrc-q6.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q6:hover {
+        background-image: url(../image/hrc-q6Hover.png);
+    }
+
+.hrc-entrance-q7 {
+    background-image: url(../image/hrc-q7.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q7:hover {
+        background-image: url(../image/hrc-q7Hover.png);
+    }
+
+.hrc-entrance-q8 {
+    background-image: url(../image/hrc-q8.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q8:hover {
+        background-image: url(../image/hrc-q8Hover.png);
+    }
+
+.hrc-entrance-q9 {
+    background-image: url(../image/hrc-q9.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q9:hover {
+        background-image: url(../image/hrc-q9Hover.png);
+    }
+
+.hrc-entrance-q10 {
+    background-image: url(../image/hrc-q10.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q10:hover {
+        background-image: url(../image/hrc-q10Hover.png);
+    }
+
+.hrc-entrance-q11 {
+    background-image: url(../image/hrc-q11.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q11:hover {
+        background-image: url(../image/hrc-q11Hover.png);
+    }
+
+.hrc-entrance-q12 {
+    background-image: url(../image/hrc-q12.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q12:hover {
+        background-image: url(../image/hrc-q12Hover.png);
+    }
+
+.hrc-entrance-q13 {
+    background-image: url(../image/hrc-q13.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q13:hover {
+        background-image: url(../image/hrc-q13Hover.png);
+    }
+
+.hrc-entrance-q14 {
+    background-image: url(../image/hrc-q14.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q14:hover {
+        background-image: url(../image/hrc-q14Hover.png);
+    }
+
+.hrc-entrance-q15 {
+    background-image: url(../image/hrc-q15.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q15:hover {
+        background-image: url(../image/hrc-q15Hover.png);
+    }
+
+.hrc-entrance-q16 {
+    background-image: url(../image/hrc-q16.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q16:hover {
+        background-image: url(../image/hrc-q16Hover.png);
+    }
+
+.hrc-entrance-q17 {
+    background-image: url(../image/hrc-q17.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q17:hover {
+        background-image: url(../image/hrc-q17Hover.png);
+    }
+
+.hrc-entrance-q18 {
+    background-image: url(../image/hrc-q18.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q18:hover {
+        background-image: url(../image/hrc-q18Hover.png);
+    }
+
+.hrc-entrance-q19 {
+    background-image: url(../image/hrc-q19.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q19:hover {
+        background-image: url(../image/hrc-q19Hover.png);
+    }
+
+.hrc-entrance-q20 {
+    background-image: url(../image/hrc-q20.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q20:hover {
+        background-image: url(../image/hrc-q20Hover.png);
+    }
+
+.hrc-entrance-q21 {
+    background-image: url(../image/hrc-q21.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .hrc-entrance-q21:hover {
+        background-image: url(../image/hrc-q21Hover.png);
+    }
+
+
+.hrc-entrance-more {
+    background-image: url(../image/hrc-qadd.png);
+    width: 70px;
+    height: 74px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.hrc-item-seperator {
+    background-image: url(../images/hrc-item-seperator.png);
+    width: 2px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    background-repeat: no-repeat;
+}
+
+/**快速入口**/
+.hrc-quickEntrance {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+    .hrc-quickEntrance ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hrc-quickEntrance li {
+        *display: inline;
+        *float: left;
+        float: left;
+        list-style: none;
+        width: 120px;
+        height: 100px;
+        background-repeat: no-repeat;
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    .hrc-quickEntrance a span {
+        display: block;
+    }
+
+    .hrc-quickEntrance a {
+        color: #333;
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+    }
+
+        .hrc-quickEntrance a:hover {
+            color: #390;
+        }
+
+.hrc-divider {
+    margin-top: 38px;
+    background-image: url(../image/hrc-dividerline.png);
+    height: 7px;
+    width: 100%;
+    clear: both;
+}
+
+/*首页分块内容*/
+.hrc-clasifyContent {
+    margin-top: 20px;
+}
+
+    .hrc-clasifyContent .hrc-infoTitle {
+        font-family: Microsoft Yahei,微软雅黑;
+        font-size: 28px;
+        color: #329632;
+    }
+
+        .hrc-clasifyContent .hrc-infoTitle span {
+            font-family: 微软雅黑;
+            font-size: 14px;
+            margin-left: 10px;
+            color: #ccc;
+        }
+
+.hrc-partContent {
+    float: left;
+    margin: 10px 0px 15px 0px;
+}
+
+    .hrc-partContent ul, .hrc-partContent li {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .hrc-partContent ul {
+        margin-top: 20px;
+    }
+
+    .hrc-partContent li {
+        margin: 10px 0px;
+    }
+
+    .hrc-partContent ul li {
+        list-style: none;
+    }
+
+    .hrc-partContent li a {
+        color: #333;
+        padding-left: 8px;
+    }
+
+        .hrc-partContent li a:hover, .hrc-partContent li a:hover span {
+            color: #390;
+        }
+
+    .hrc-partContent li span {
+        float: right;
+        color: #999;
+    }
+
+.hrc-partContentLeft {
+    width: 355px;
+    padding-right: 20px;
+}
+
+.hrc-partContentRight {
+    padding-left: 10px;
+    border-left: 1px solid #e6e6e6;
+    width: 360px;
+}
+
+/*右侧个人信息内容*/
+.hrc-personinfo {
+    padding: 0 10px;
+    line-height: 20px;
+}
+
+.hrc-nameArea {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333333;
+    font-family: 'Microsoft YaHei';
+}
+
+.hrc-spliter {
+    border-top: solid 1px #e5e5e5;
+    border-bottom: solid 1px #FFF;
+    margin: 10px 2px 10px 0;
+    font-size: 0;
+    overflow: hidden;
+    clear: both;
+    height: 0px;
+    _height: '';
+}
+
+.hrc-taskList {
+    position: relative;
+}
+
+    .hrc-taskList ul, .hrc-taskList li {
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .hrc-taskList li a {
+            color: #666;
+        }
+
+            .hrc-taskList li a:hover {
+                color: #390;
+            }
+
+    .hrc-taskList ul {
+        margin: 10px 10px 10px 0px;
+    }
+
+    .hrc-taskList li {
+        font-size: 14px;
+        list-style: none;
+        line-height: 30px;
+        padding-left: 15px;
+        border-bottom: solid 1px #f9f9f9;
+    }
+
+.hrc-taskListOff {
+    background-image: url(../image/hrc-icon-controls.png);
+    background-position: 5px -135px;
+    display: block;
+    background-repeat: no-repeat;
+    width: 40px;
+    margin-right: -12px;
+    height: 24px;
+    float: right;
+    margin-top: 6px;
+    *margin-top: -22px;
+}
+
+.hrc-taskListOn {
+    background-position: 5px -165px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.hrc-taskSubContent {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 999;
+}
+
+    .hrc-taskSubContent ul {
+        margin: 10px 10px;
+    }
+
+    .hrc-taskSubContent .hrc-spliter {
+        margin: 0 10px;
+    }
+
+    .hrc-taskSubContent ul li {
+        padding-left: 32px;
+        line-height: 28px;
+        border: none;
+    }
+
+    .hrc-taskSubContent li a {
+        color: #333;
+    }
+
+        .hrc-taskSubContent li a:hover {
+            color: #390;
+        }
+
+
+.hrc-taskCount {
+    background-image: url(../image/hrc-button.png);
+    background-position: left -547px; 
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    line-height: 20px; 
+    font-weight: bold;
+    font-family: 宋体;
+    margin-left: 10px;
+
+}
+
+    .hrc-taskCount span {
+        background-image: url(../image/hrc-button.png);
+        background-position: right -547px; 
+        background-repeat: no-repeat;
+        padding-right: 6px;
+        margin: 0 0 0 8px;
+        display: block;
+        text-indent: -2px;
+    }
+
+.slides_container {
+    width: 185px;
+    height: 320px;
+}
+
+ul.pagination {
+    padding: 0px;
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.pagination li {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    margin: 0 1px;
+}
+
+    .pagination li a {
+        display: inline-block;
+        width: 12px;
+        height: 0px;
+        padding-top: 13px;
+        background-image: url(../image/pagination.png);
+        background-position: 0 0;
+        overflow: hidden;
+    }
+
+        .pagination li a:hover {
+            background-position: 0 -26px;
+        }
+
+    .pagination li.current a {
+        background-position: 0 -13px;
+    }
+
+
+/*错误页快速链接*/
+ul.hrc-infoGuide {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: 30px 0px 60px 0px;
+    height: 100px;
+}
+
+.hrc-infoGuide li {
+    float: left;
+    list-style: none;
+    width: 120px;
+    background-repeat: no-repeat;
+}
+
+.hrc-infoGuide a {
+    display: block;
+    width: 120px;
+    height: 100px;
+}
+
+    .hrc-infoGuide a span {
+        display: block;
+        line-height: 30px;
+        color: #999;
+        font-size: 14px;
+        text-align: center;
+        font-family: 宋体;
+    }
+
+
+.errorInfo {
+    padding: 10px 100px;
+}
+
+.btn .caret {
+    margin-top: 8px;
+    margin-left: 0;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    border-top: 4px solid #000000;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: "";
+}
+
+.btn-group {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+    .btn-group.open .btn.dropdown-toggle {
+        background-color: #e6e6e6;
+    }
+
+    .btn-group.open .dropdown-toggle {
+        background-image: none;
+        -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+        outline: 0;
+    }
+
+    .btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+        outline: 0;
+    }
+
+.open > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.btn-group.open .dropdown-toggle {
+    background-image: none;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 20px;
+    color: #333333;
+    white-space: nowrap;
+}
