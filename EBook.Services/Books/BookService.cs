@@ -84,7 +84,6 @@ namespace EBook.Services.Books
                             userXBook.RealReturnDate = DateTime.Now;
                             userXBook.State = State.Return;
  
-
                             await _userXBookRepository.UpdateAsync(userXBook);
 
                             blackList.Count++;
@@ -96,7 +95,6 @@ namespace EBook.Services.Books
                             //6.2.如果在blackList表没有存在数据
                             userXBook.RealReturnDate = DateTime.Now;
                             userXBook.State = State.Return;
-                           
 
                             await _userXBookRepository.UpdateAsync(userXBook);
 
