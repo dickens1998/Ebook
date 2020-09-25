@@ -3068,8 +3068,8 @@
     <Content Include="Scripts\kendo\kendo.web.min.js.map" />
     <Content Include="Scripts\kendo\kendo.webcomponents.min.js.map" />
     <Content Include="Scripts\kendo\kendo.window.min.js.map" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Book\Index.cshtml" />
+    <Content Include="Views\Home\Default.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

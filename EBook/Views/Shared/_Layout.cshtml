@@ -1,15 +1,24 @@
 ﻿<!DOCTYPE html>
+
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <title></title>
+
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/Content/hrc/hrc.css" rel="stylesheet" />
+    <link href="~/Content/hrc/style.css" rel="stylesheet" />
+    <link href="~/Content/hrc/easyui.css" rel="stylesheet" />
+
+    <link href="~/Content/kendo/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/Content/kendo/kendo.default.min.css" rel="stylesheet" />
+
+    @*<link rel="shortcut icon" href="~/favicon.ico" />*@
+
+    @RenderSection("links", required: false)
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,24 +26,166 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">你好，Test@*@System.Threading.Thread.CurrentPrincipal.Identity.Name*@</a>
+                        <ul class="dropdown-menu">
+                            @*<li><a href="https://passport.sjfood.us">帐号设置</a></li>
+        <li><a href="@Url.Action("Signout", "Account" )">注销</a></li>*@
+                            <li>注销</li>
+
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+    <div class="hrc-header">
+        <div class="hrc-logoArea">
+            <div id="hrc-logo" class="hrc-logo"></div>
+        </div>
+        <div class="hrc-nav">
+            <ul>
+                @*<li><a href="https://myoa.sjfood.us/Schedule/MySchedule" class="hrc-selectedNav">MYOA</a></li>
+                <li><a href="http://cnhr.sjfood.us/index.php?r=hr%2Fdefault%2Femployee">Employee Center</a></li>
+                <li><a href="http://cnhr.sjfood.us">HR Management</a></li>
+                <li><a href="https://foundation.sjfood.us">HR Planning</a></li>
+                <li><a href="https://ticket.sjfood.us/Common/Redirect">Ticketing System</a></li>
+                <li><a href="http://183.58.24.145:82/">Dev Management</a></li>*@
+            </ul>
+        </div>
+        <div class="hrc-secondNav">
+            <ul id="secondNav" style="text-align:center">
+                @*<li class="MySchedule">
+                    <a href="/Schedule/MySchedule">我的日程</a>
+                </li>
+                <span>|</span>
+                <li class="MyOrderSchedule">
+                    <a href="/Schedule/MyOrderSchedule">我的交待事项</a>
+                </li>
+                <span>|</span>
+                <li class="Authorize">
+                    <a href="/Schedule/Authorized">日程授权</a>
+                </li>
+                <span>|</span>
+                <li class="AuditTrail">
+                    <a href="/Schedule/AuditTrail">日程修改历史</a>
+                </li>
+                <span>|</span>
+                <li class="Teaching">
+                    <a href="/Home/Teaching">教学视频</a>
+                </li>
+                <span>|</span>
+                <li class="ExportMeetingSchedule">
+                    <a href="/Report/ExportMeetingSchedule">会议日程报表</a>
+                </li>
+                <span>|</span>
+                <li class="ExportAllUnCompleteSchedule">
+                    <a href="/Report/ExportAllUnCompleteSchedule" style="width: 120px;height: 35px;">未Complete日程报表</a>
+                </li>
+                <span style="margin-left:35px">|</span>
+                <li class="GetWorkTimeInOutForms">
+                    <a href="/Report/GetWorkTimeInOutForms" style="width: 80px;height: 35px;">打卡记录报表</a>
+                </li>
+                <span>|</span>
+                <li class="ExportCalculateMeetingSchedules">
+                    <a href="/Report/ExportCalculateMeetingSchedules" style="width: 120px;height: 35px;">会议次数时长统计表</a>
+                </li>
+                <span style="margin-left:35px">|</span>
+                <li class="Operator">
+                    <a href="/Manage/Operator">授权管理</a>
+                </li>
+                <span>|</span>
+                <li class="Role">
+                    <a href="/Manage/Role">角色管理</a>
+                </li>*@
+            </ul>
+        </div>
+    </div>
+    <div class="appraisal">
+        <div class="appr_container flex_wrap">
+            <div class="appr_sidebar" style="height: 1000px;">
+                <h3 class="appr_side_title">
+                    <i class="icon_todos"></i><span class="txt">TEST</span>
+                </h3>
+                @*<h3 class="appr_side_title">
+                    <i class="icon_todos"></i><span class="txt">日程管理</span>
+                </h3>
+                <ul class="appr_side_list">
+                    <li class="MySchedule"><a href="/Schedule/MySchedule">我的日程</a></li>
+                    <li class="MyOrderSchedule"><a href="/Schedule/MyOrderSchedule">我的交待事项</a></li>
+                    <li class="Authorize"><a href="/Schedule/Authorized">日程授权</a></li>
+                    <li class="AuditTrail"><a href="/Schedule/AuditTrail">日程修改历史</a></li>
+                    <li class="Teaching"><a href="/Home/Teaching">教学视频</a></li>
+                </ul>
+                <h3 class="appr_side_title">
+                    <i class="icon_read"></i><span class="txt">报表中心</span>
+                </h3>
+                <ul class="appr_side_list">
+                    <li class="ExportMeetingSchedule"><a href="/Report/ExportMeetingSchedule">会议日程报表</a></li>
+                    <li class="ExportAllUnCompleteSchedule"><a href="/Report/ExportAllUnCompleteSchedule">未Complete日程报表</a></li>
+                    <li class="GetWorkTimeInOutForms"><a href="/Report/GetWorkTimeInOutForms">打卡记录列表</a></li>
+                    <li class="ExportCalculateMeetingSchedules"><a href="/Report/ExportCalculateMeetingSchedules">会议次数时长统计表</a></li>
+                </ul>
+                <h3 class="appr_side_title">
+                    <i class="icon_set"></i><span class="txt">系统中心</span>
+                </h3>
+                <ul class="appr_side_list">
+                    <li class="Operator"><a href="/Manage/Operator">授权管理</a></li>
+                    <li class="Role"><a href="/Manage/Role">角色管理</a></li>
+                    <li class="Menu"><a href="/Menu/Menu">菜单管理</a></li>
+                </ul>*@
+            </div>
+            <div class="appr_bd_wrap">
+                <div class="judge_wrap">
+                    <div class="judge_wrap judge_size_b evaluate_detail">
+                        @RenderBody()
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <i class="arrow"></i>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/kendo/jquery.min.js"></script>
+    <script src="~/Scripts/kendo/kendo.all.min.js"></script>
+    @*<script src="~/Scripts/kendo.2016.2.607/kendo.all.min.js"></script>*@
+    <script src="~/Scripts/kendo/kendo.timezones.min.js"></script>
+    <script src="~/Scripts/kendo/messages/kendo.messages.zh-CN.min.js"></script>
+    <script src="~/Scripts/kendo/cultures/kendo.culture.zh-CN.min.js"></script>
+
+    <script src="~/Scripts/hrc/hrcsite.js"></script>
+    <script src="~/Scripts/hrc/appraisal.js"></script>
+    <script src="~/Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="~/Scripts/myoa.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            //kendo.culture("zh-CN");
+
+            //// start with sunday.
+            //kendo.culture().calendar.firstDay = 0;
+
+            //// bind selected sidebar.
+            //bindSelectedSidebar();
+
+            //// sidebar show and hide.
+            //$('.flex_box').click(function () {
+            //    $('.appr_container.flex_wrap').toggleClass('fold');
+
+            //    $(window).trigger('resize');
+            //});
+
+        });
+
+    </script>
+
+    @RenderSection("scripts", required: false)
+
 </body>
 </html>
