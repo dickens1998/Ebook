@@ -31,8 +31,6 @@ namespace EBook.Controllers
             return Json(result, JsonRequestBehavior.AllowGet);
         }
 
-
-
         /// <summary>
         /// 获取用户所借的所有书籍
         /// </summary>
@@ -93,7 +91,6 @@ namespace EBook.Controllers
         public async Task<ActionResult> Add(AddBookBindingModel model)
         {
             var result = await _bookService.AddAsync(model.Name,model.Author,model.Price);
-
             return Json(result, JsonRequestBehavior.AllowGet);
         }
 
